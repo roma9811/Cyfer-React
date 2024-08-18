@@ -1,0 +1,48 @@
+.footer{
+    height: 600px;
+    background-image: url("../../Assets/Images/Vector\ \(60\).png");
+    background-repeat: no-repeat;
+    background-position: center top;
+    color: #fff;
+    position: relative;
+}
+.footerLogo{
+    max-width: 565px;
+}
+.footerLogo p{
+    margin: 30px 0 30px 0;
+}
+.socialLogo{
+    display: flex;
+    gap: 10px;
+}
+.liList{
+    display: flex;
+    
+}
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    padding-top: 90px;
+
+}
+
+.list{
+    display: flex;
+    gap: 80px;
+    margin-left: 50px;
+    line-height: 50px;
+}
+.ulListBox{
+    display: flex;
+    justify-content: space-around;
+}
+.list span{
+    font-weight: bold;
+    color: #CEC4E4;
+}
+.copyright{
+    position: absolute;
+    bottom: 80px;
+    right: 80px;
+}

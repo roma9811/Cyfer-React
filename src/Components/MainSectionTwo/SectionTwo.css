@@ -1,0 +1,73 @@
+.sectionTwo{
+    height: 1300px;
+    background-image: url("../../Assets/Images/cubes4.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 30%;
+}
+
+.testimonials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 51px;
+    width: 168px;
+    border: 1px solid #594271;
+    border-radius: 50px;
+    color: #AC82FF;
+}
+.testmonialContainer{
+    max-width: 1150px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+.clients img{
+    margin: 30px 0 30px 0;
+}
+.customersContainer{
+    margin-top: 120px;
+    display: flex;
+}
+.imgContainer{
+   height: 400px;
+   background-image: url("../../Assets/Images/cubes5.png");
+   background-position:center left;
+   background-repeat: no-repeat;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   width:750px;
+}
+.asset2{
+    margin-left: 40px;
+}
+.customer1,.customer2,.customer3{
+    background-image: url("../../Assets/Images/Vector\ 3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 1000px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.customers{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.customerBox2{
+    display: flex;
+    gap: 15px;
+    margin-top:10px ;
+}
+
+.customerBox3{
+    width: 500px;
+}
+.assetImg img{
+   float: right;
+}
+

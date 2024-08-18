@@ -1,0 +1,198 @@
+.generalContainer{
+    height: 900px;
+    background-image: url("../../Assets/Images/cubes.png");
+
+    background-repeat: no-repeat;
+    background-size: 30%;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+}
+.headerContainer {
+    height: 100vh;
+    background-image: url("../../Assets/Images/Vector.png");
+    background-size: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+
+.nav ul {
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    width: 500px;
+    cursor: pointer;
+}
+.nav li:after {
+    display: block; 
+    content: ""; 
+    height: 2px; 
+    width: 0%; 
+    background-color: #742EFF;
+    transition: width 0.3s ease-in-out; 
+  }
+ 
+  .nav li:hover:after,
+  .nav li:focus:after {
+    width: 100%;
+  }
+  .nav li:hover{
+    color:white;
+  } 
+.btn button{
+    height: 69px;
+    width: 180px;
+    background-color: #742EFF;
+    color: #fff;
+}
+.cyfer img{
+    margin-top: 100px;
+}
+.unlockingText{
+    height: 160px;
+    max-width: 500px;
+    margin-top: 40px;
+}
+.futureOfFinance{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 20px;
+    color: #fff;
+    gap: 5px;
+ }
+ .arworkContainer{
+    display: flex;
+
+ }
+ .asset{
+    margin-top: 200px;
+ }
+
+.smart{
+    position: absolute; 
+    right: 50px;
+    z-index: -1;
+}
+.twoBtn{
+    display: flex;
+    gap: 30px;
+}
+.twoBtn button{
+    height: 69px;
+    width: 180px;
+}
+.learnBtn{
+    height: 69px;
+    width: 180px;
+}
+.Burger {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .bm-burger-button {
+    position: absolute;
+    width: 36px;
+    height: 25px;
+    right: 36px;
+    top: 30px;
+  }
+  
+  .bm-burger-bars {
+    background:#fff;
+  }
+  
+  .bm-cross {
+    background: #F5FCFF;
+  }
+  
+  .bm-menu {
+    background: linear-gradient(to bottom, #742EFF, #B79CFF);
+    padding: 3.5em 4.5em ;
+    line-height: 60px;
+    font-size:20px;  
+    border: 2px solid #D4D4D7;
+
+  }
+  .bm-menu a{
+    color: #F5FCFF;
+  }
+
+@media only screen and (max-width: 1024px) {
+    .generalContainer{
+        height: 700px;
+        background-image: none;
+    }
+    .headerContainer {
+        background-image:none;
+    }
+    .navContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+    .nav ul {
+       display: none;
+    }
+    .Burger{
+        display: block;
+        position: fixed;
+        z-index: 1;
+    }
+    .cyfer img{
+        margin:0 0 0 30px;
+        height: 40px;
+    }
+    .futureOfFinance{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10px;
+        color: #fff;
+        gap:0px;
+        padding: 20px;
+     }
+     .arwork img{
+        height: 250px;
+     }
+   
+    .unlockingText{
+        margin-top:10px;
+        max-width: 550px;
+        height: auto;
+    }
+    .unlocking img{
+        height: 40px;
+    }
+    .twoBtn{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        height:80px;
+        gap: 10px;
+    }
+    .twoBtn button{
+        height: 40px;
+        width: 130px;
+    }
+    .nav li:after {
+        display: none; 
+      }
+   
+    .btn button{
+        display: none;
+    }
+   .asset,.smart{
+       display: none;
+     }
+}

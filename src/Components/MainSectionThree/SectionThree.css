@@ -1,0 +1,53 @@
+.sectionThree{
+    height: 1000px;
+    background-image: url("../../Assets/Images/cubes6.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 20%;
+    color: #fff;
+}
+.partnersContainer{
+    display: flex;
+    justify-content: space-around;
+}
+.digitalPartners{
+    background-image: url("../../Assets/Images/vector4.png");
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 570px;
+    width: 760px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.digitalGrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 90px;
+}
+.digitalPartners h4 {
+    position: absolute; 
+    top: 20px; 
+    left: 40px; 
+    margin: 0;
+}
+.credentialsBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 51px;
+    width: 168px;
+    border: 1px solid #594271;
+    border-radius: 50px;
+    color: #AC82FF;
+    margin-bottom: 30px;
+}
+.expertise p{
+    max-width: 400px ;
+    margin-top: 50px;
+}
+.frame img{
+    float: right;
+    margin-top: 40px;
+}

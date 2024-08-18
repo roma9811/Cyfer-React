@@ -1,0 +1,157 @@
+.sectionOne {
+    height: 1400px;
+    color: #fff;
+}
+.serviceBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 51px;
+    width: 168px;
+    border: 1px solid #594271;
+    border-radius: 50px;
+    color: #AC82FF;
+    margin-bottom: 30px;
+}
+.learnMore button{
+    height: 69px;
+    width: 180px;
+    background-color: #742EFF;
+    color: #fff;
+    margin-top: 30px;
+}
+.learnMore p{
+    width: 500px;
+}
+.ourServiceContainer{
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.triangle2{
+    position: absolute;
+    left: 0;
+    top: 220px;
+}
+.gridContainer {
+    margin-top: 180px;
+    display: grid;
+    justify-content: center;
+    align-items: center; 
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center; 
+    align-content: center; 
+    gap: 30px;
+}
+.parentContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.gridBox{
+    width: 100%;
+    height: auto;
+    background-image: url("../../Assets/Images/grid.png");
+    background-size: cover; 
+    background-position: center; /* Фон будет центрирован */
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #DDCCFF;
+    padding: 20px; /* Добавляет отступы внутри контейнера для текста */
+    box-sizing: border-box; /* Включает отступы в ширину и высоту контейнера */
+}
+.gridBox img{
+    float: right;
+    margin: 15px 15px 0 0;
+}
+.gridBox h2{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.circle img{
+    float: right;
+}
+@media only screen and (max-width: 1200px) {
+    .sectionOne {
+        height: 2800px;
+        color: #fff;
+    }
+    .serviceBtn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 51px;
+        width: 168px;
+        border: 1px solid #594271;
+        border-radius: 50px;
+        color: #AC82FF;
+        margin-bottom: 30px;
+    }
+    .service img{
+        height: 50%;
+    }
+    .learnMore button{
+        height: 69px;
+        width: 180px;
+        background-color: #742EFF;
+        color: #fff;
+        margin-top: 30px;
+    }
+    .learnMore p{
+        width:90%;
+    }
+    .ourServiceContainer{
+        margin-top: 20px;
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+    }
+    .ourServiceContainer img{
+        width: 70%;
+        margin: 20px 0 20px 0;
+    }
+    .triangle2{
+       display: none;
+    }
+    .gridContainer {
+        margin-top: 40px;
+        display: flex;
+       flex-wrap: wrap;
+        justify-content: center;
+        align-items: center; 
+        align-content: center; 
+        gap: 30px;
+    }
+    .parentContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .gridBox{
+        height:auto;
+        width: auto;
+        background-image: url("../../Assets/Images/grid.png");
+        background-repeat: no-repeat;
+        text-align: center;
+        color: #DDCCFF;
+    }
+    .gridBox img{
+        float: right;
+        margin: 15px 15px 0 0;
+    }
+    .gridBox h2{
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .circle img{
+        display: none;
+    }
+}

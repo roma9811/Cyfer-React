@@ -1,0 +1,243 @@
+.mainContainer{
+    height: 1400px;
+    background-image: url("../../Assets/Images/cubes2.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+    margin-top: 60px;
+}
+.statistic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.bitcoin,.user,.market{
+    display: flex;
+    align-items: center;
+    height:120px;
+    border-right: 2px solid #594271;
+    padding-right: 20px;
+}
+.discoverContainer {
+    height: 700px;
+    margin-top: 200px;
+    background-image: url("../../Assets/Images/Vector2.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    position: relative;
+}
+
+.triangle, .cross {
+    position: absolute;
+}
+.triangle {
+    left: 90px;
+}
+.cross {
+    right: 10px;
+    top: 120px;
+}
+.noutText{
+    display: flex;
+    justify-content:center;
+}
+.noutbook{
+    margin-top: 80px;
+    width: 600px;
+}
+.discovery{
+   height: 100%;
+   width: 500px;
+   margin-top: 80px;
+}
+.discovery p{
+    color: #fff;
+}
+.discoveryText1{
+    margin:100px 0 50px 0;
+}
+.productContainer{
+    display: flex;
+    flex-direction: column;
+}
+.ourProduct{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 51px;
+    width: 168px;
+    border: 2px solid #594271;
+    border-radius: 50px;
+    color: #AC82FF;
+}
+.product {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+
+}
+.productContainer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+.ourProduct{
+    margin-bottom: 40px;
+}
+.cryptoImages{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.sakura,.komorebi,.yugen{
+    background-image: url("../../Assets/Images/productImage.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    height: 132px;
+    width: 480px;
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+    line-height: 30px;
+}
+@media only screen and (max-width: 1200px) {
+    .statistic {
+        gap: 30px;
+    }
+
+    .bitcoin, .user, .market {
+        height: 90px;
+        padding-right: 10px;
+    }
+
+    .statistic {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .statistic img{
+        height: 60px;
+    }
+
+    .bitcoin, .user, .market {
+        height: auto;
+        padding-right: 0;
+        border-right: none;
+        border-bottom: 2px solid #594271;
+        padding-bottom: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    .mainContainer{
+        height: 1400px;
+        background-image: url("../../Assets/Images/cubes2.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: 50%;
+        margin-top: 60px;
+    }
+ 
+    .discoverContainer {
+        height: 700px;
+        background-image: none;
+        margin-top: 70px;
+    }
+    
+    .triangle, .cross {
+        display: none;
+    }
+    .noutText {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; 
+        align-items: center; 
+        max-width: 100%;
+        padding: 10px;
+    }
+    .noutbook {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+        width: auto;
+    }
+    
+    .noutbook img {
+        width:80px;
+        height: auto;
+        display: block;
+    }
+    .discovery{
+       height: 70%;
+       margin-top: 50px;
+       display: flex;
+       flex-direction: column;
+       flex-wrap: wrap; 
+       align-items: center; 
+       padding: 10px;
+    }
+    .discovery img{
+        max-width: 50%;
+        height: auto;
+        display: block;
+    }
+    .discovery p{
+        color: #fff;
+        max-width: 90%;
+        height: auto;
+        display: flex;
+    }
+    .discoveryText1{
+        margin-top: 20px;
+    }
+    .productContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .productContainer img{
+         max-width: 50%;
+        height: auto;
+        display: block;
+    };
+    .product {
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+    }  
+    .ourProduct{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 51px;
+        width: 168px;
+        border: 2px solid #594271;
+        border-radius: 50px;
+        color: #AC82FF;
+    }
+    .productContainer {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .ourProduct{
+        margin-bottom: 40px;
+    }
+    .cryptoImages{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .sakura,.komorebi,.yugen{
+        background-image: url("../../Assets/Images/productImage.png");
+        background-repeat: no-repeat;
+        background-size: 80%;
+        height: 132px;
+        width: 480px;
+        color: #fff;
+        text-align: center;
+        padding-top: 20px;
+        line-height: 30px;
+    }
+
+}
+   
