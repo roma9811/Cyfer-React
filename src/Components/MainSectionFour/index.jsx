@@ -7,7 +7,7 @@ import Circle2 from "../../Assets/Images/circle2.png";
 export const MainSectionFour =()=>{
     return(
         <div className="sectionFour">
-            <div className="resourcesContainer">
+            <div className="resourcesContainer" id="resources">
                 <div className="ourResourcesText">
                     <div className="ourResources">Our Resources</div>
                     <img src={Blog} alt="" height={50}/>

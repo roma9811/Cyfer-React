@@ -14,7 +14,7 @@ import Asset from "../../Assets/Images/Asset.png";
 export const MainSectionTwo =()=>{
     return(
         <div className="sectionTwo">
-            <div className="testmonialContainer">
+            <div className="testmonialContainer" id="why-us">
             <div className="testmonialsText">
                 <div className="testimonials">Testimonials</div>
                 <div className="clients">

@@ -8,7 +8,8 @@
 }
 .partnersContainer{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 60px;
 }
 .digitalPartners{
     background-image: url("../../Assets/Images/vector4.png");
@@ -50,4 +51,33 @@
 .frame img{
     float: right;
     margin-top: 40px;
+}
+@media only screen and (max-width: 1024px) {
+    .sectionThree{
+        height: auto;
+        background-image: url("../../Assets/Images/cubes6.png");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: 20%;
+        color: #fff;
+    }
+    .digitalPartners{
+        display: none;
+    }
+    .expertise p{
+        max-width: 400px ;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .expertise img{
+        width: 70%;
+        height: 50px;
+    }
+    .frame img{
+        height: auto;
+        width: 50%;
+    }
+    .triangle3{
+        display: none;
+    }
 }

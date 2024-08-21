@@ -28,6 +28,7 @@
 .customersContainer{
     margin-top: 120px;
     display: flex;
+    justify-content: center;
 }
 .imgContainer{
    height: 400px;
@@ -71,3 +72,76 @@
    float: right;
 }
 
+@media only screen and (max-width: 1024px) {
+    .sectionTwo{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column;
+    }
+    .testimonials{
+        margin-left: 30px;
+    }
+    .clients{
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column; 
+        text-align: center;
+        padding: 0 20px; 
+    }
+    .clients img{
+        margin: 30px 0 30px 0;
+        width: 60%;
+        height: auto;
+    }
+    .customersContainer{
+        margin-top: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        width: 100%;
+        flex-direction: column;
+        text-align: center; 
+    }
+    .customerBox{
+        height: auto;
+        width: auto;
+    }
+    .asset2{
+        display: none;
+    }
+    .customer1, .customer2, .customer3 {
+        background-image: url("../../Assets/Images/Vector\ 3.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 75%;
+        color: #fff;
+        margin: 0 auto; 
+    }
+    .customers{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        gap: 20px;
+        width: 100%; 
+    }
+    .customerBox2{
+        display: flex;
+        gap: 15px;
+        margin-top: 10px;
+        justify-content: center; 
+    }
+    .customerBox3{
+        width: 100%; 
+        max-width: 500px;
+    }
+    .ball, .assetImg{
+        display: none;
+    }
+    .imgContainer{
+        display: none;
+    }
+}

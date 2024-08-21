@@ -27,9 +27,11 @@ margin-bottom: 30px;
     background-image: url("../../Assets/Images/vector5.png");
     background-repeat: no-repeat;
     height: 570px;
-    width: 850px;
     color: #fff;
-    padding: 50px 0 0 50px;
+    padding: 50px;
+}
+.frame695 img{
+    width: 700px;
 }
 .sercurity p{
     max-width: 550px;
@@ -50,17 +52,14 @@ margin-bottom: 30px;
 
 .imagesBox{
     height: 550px;
-    width: 450px;
     background-image: url("../../Assets/Images/Frame722.png");
 }
 .imagesBox2{
     height: 550px;
-    width: 450px;
     background-image: url("../../Assets/Images/Frame723.png");
 }
 .imagesBox3{
     height: 550px;
-    width: 450px;
     background-image: url("../../Assets/Images/Frame724.png");
 }
 .imagesText{
@@ -69,8 +68,77 @@ margin-bottom: 30px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 .imagesText h3{
     max-width: 370px;
     margin-top: 20px;
+}
+@media only screen and (max-width: 1024px) {
+    .sectionFour{
+        height:auto;
+        margin-top: 40px;
+    }
+    .ourResources{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 51px;
+        width: 168px;
+        border: 1px solid #594271;
+        border-radius: 50px;
+        color: #AC82FF;
+        margin-bottom: 30px;  
+    } 
+    .ourResourcesText img{
+        height: auto;
+        width: 40%;
+    }
+    .resourcesContainer{
+        max-width: 600px;
+        width: 100%;
+        display: flex;
+       margin-left: 40px;
+    }
+    .sercurityBox{
+        display: flex;
+        justify-content:center;
+        margin-top: 80px;
+        gap: 20px;
+    }
+    .sercurity {
+        background-image: url("../../Assets/Images/vector5.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto; 
+        width: 100%; 
+        max-width: 850px; 
+        color: #fff;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        margin: 30px;
+    }
+    .frame695{
+        display: none;
+    }
+    .sercurity p{
+        max-width: 550px;
+        margin-bottom: 70px;
+    }
+    .sercurity img{
+        margin:20px;
+        width: 65%;
+        height: auto;
+    }
+    .sercurity span{
+        color: #8E8E92;
+    }
+    .sercurityimages{
+        color: #fff;
+        display: none;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    
 }

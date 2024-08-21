@@ -8,6 +8,13 @@ import Unlocking from "../../Assets/Images/unlocking.png";
 import Arwork from "../../Assets/Images/Arwork.png";
 import Asset from "../../Assets/Images/Asset.png";
 import Smart from "../../Assets/Images/Smart.png";
+import { Link as ScrollLink } from 'react-scroll';
+import HomeIcon from '@mui/icons-material/Home';
+import ProductIcon from '@mui/icons-material/ShoppingCart'; 
+import ServicesIcon from '@mui/icons-material/Build'; 
+import WhyUsIcon from '@mui/icons-material/Help'; 
+import ResourceIcon from '@mui/icons-material/Bookmark'; 
+import AboutIcon from '@mui/icons-material/Info';
 
 const theme = createTheme({
     palette: {
@@ -24,45 +31,45 @@ export const HeaderComponent = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const handleStateChange = (state) => {
-      setIsMenuOpen(state.isOpen);
+        setIsMenuOpen(state.isOpen);
     }
-  
     const closeMenu = () => {
-      setIsMenuOpen(false);
+        setIsMenuOpen(false);
     }
     return (
         <ThemeProvider theme={theme}>
-            <div className="generalContainer">
+            <div className="generalContainer" id='home'>
                 <div className="headerContainer">
                     <div className="navContainer">
-                    <div className="Burger">
-                        <Menu right isOpen={isMenuOpen} onStateChange={handleStateChange}>
-                            <a className="bm-item" href="#home" onClick={closeMenu}>Home</a>
-                            <a className="bm-item" href="#portfolio" onClick={closeMenu}>Portfolio</a>
-                            <a className="bm-item" href="#about" onClick={closeMenu}>About me</a>
-                            <a className="bm-item" href="#contact" onClick={closeMenu}>Contact Me</a>
-                        </Menu>
-                    </div>
-                       
-                        
+                        <div className="Burger">
+                            <Menu right={true} isOpen={isMenuOpen} onStateChange={handleStateChange}>
+                                <ScrollLink className="bm-item" to="home" smooth={true} duration={700} onClick={closeMenu}><HomeIcon /> Home</ScrollLink>
+                                <ScrollLink className="bm-item" to="product" smooth={true} duration={500} onClick={closeMenu}><ProductIcon /> Product</ScrollLink>
+                                <ScrollLink className="bm-item" to="services" smooth={true} duration={500} onClick={closeMenu}><ServicesIcon /> Services</ScrollLink>
+                                <ScrollLink className="bm-item" to="why-us" smooth={true} duration={500} onClick={closeMenu}><WhyUsIcon /> Why Us</ScrollLink>
+                                <ScrollLink className="bm-item" to="resources" smooth={true} duration={500} onClick={closeMenu}><ResourceIcon /> Resource</ScrollLink>
+                                <ScrollLink className="bm-item" to="about" smooth={true} duration={500} onClick={closeMenu}><AboutIcon /> About</ScrollLink>
+                            </Menu>
+                        </div>
                         <div className="cyfer">
                             <img src={Logo} alt="logo" height={50} />
                         </div>
                         <div className="nav">
                             <ul>
-                                <li>Home</li>
-                                <li>Product</li>
-                                <li>Services</li>
-                                <li>Why Us</li>
-                                <li>Resources</li>
-                                <li>About</li>
+                                <li><ScrollLink to="home" smooth={true} duration={500}>Home</ScrollLink></li>
+                                <li><ScrollLink to="product" smooth={true} duration={500}>Product</ScrollLink></li>
+                                <li><ScrollLink to="services" smooth={true} duration={500}>Services</ScrollLink></li>
+                                <li><ScrollLink to="why-us" smooth={true} duration={500}>Why Us</ScrollLink></li>
+                                <li><ScrollLink to="resources" smooth={true} duration={500}>Resources</ScrollLink></li>
+                                <li><ScrollLink to="about" smooth={true} duration={500}>About</ScrollLink>
+                                </li>
                             </ul>
                         </div>
                         <div className="btn">
-                            <Button variant="contained" color="primary">Contact now</Button>
+                            <ScrollLink to='contact' smooth={true} duration={500}><Button variant="contained" color="primary">Contact now</Button></ScrollLink>
                         </div>
                     </div>
-                    <div className="futureOfFinance">
+                     <div className="futureOfFinance">
                         <div className="unlocking">
                             <img src={Unlocking} alt="" height={80} />
                             <div className="unlockingText">
@@ -72,13 +79,13 @@ export const HeaderComponent = () => {
                                 </p>
                             </div>
                             <div className="twoBtn">
-                                <Button variant="contained" color="primary">Contact Us</Button>
+                               <ScrollLink to='contact' smooth={true} duration={500}><Button variant="contained" color="primary">Contact Us</Button></ScrollLink> 
                                 <Button variant="outlined" color="secondary" sx={{ color: 'white', borderColor: '#742EFF' }}>Learn More</Button>
                             </div>
                         </div>
-                        <div className="arworkContainer"> 
+                        <div className="arworkContainer">
                             <div className="asset"><img src={Asset} alt="" /></div>
-                            <div className="arwork"><img src={Arwork} alt="" height={590} /></div>
+                            <div className="arwork"><img src={Arwork} alt="" /></div>
                         </div>
                         <div className="smart"><img src={Smart} alt="" /></div>
                     </div>

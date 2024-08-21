@@ -23,7 +23,7 @@ export const MainComponent =()=>{
                 <div className="triangle"><img src={Triangle} alt="triangle" height={150} /></div>
                 <div className="cross"><img src={Cross} alt="cross" height={200} /></div>
                 <div className="noutText">
-                    <div className="noutbook"><img src={Noutbook} alt="noutbook" height={400} /></div>
+                    <div className="noutbook"><img src={Noutbook} alt="noutbook" /></div>
                     <div className="discovery">
                         <img src={Discovery} alt="discovery" height={90}/>
                         <p className="discoveryText1">Lorem ipsum dolor sit amet consectetur. Blandit duis vestibulum a sed quis ante vitae vitae.
@@ -37,7 +37,7 @@ export const MainComponent =()=>{
                     </div>
                 </div>
             </div>
-            <div className="product">
+            <div className="product" id="product">
               <div className="productContainer">
                 <div className="ourProduct">Our Product</div>
                 <img src={Range} alt="range" height={40} width={650} />

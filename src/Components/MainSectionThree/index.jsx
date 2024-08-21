@@ -11,7 +11,7 @@ import Triangle3 from "../../Assets/Images/triangle3.png";
 export const MainSectionThree = ()=> {
     return(
         <div className="sectionThree">
-           <div className="partnersContainer">
+           <div className="partnersContainer" id="about">
                 <div className="digitalPartners">
                     <h4>Our Digital Partners</h4>
                     <div className="digitalGrid">

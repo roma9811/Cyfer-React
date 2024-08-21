@@ -42,10 +42,14 @@
 .noutText{
     display: flex;
     justify-content:center;
+    gap: 50px;
 }
 .noutbook{
     margin-top: 80px;
     width: 600px;
+}
+.noutbook img{
+    height: 70%;
 }
 .discovery{
    height: 100%;
@@ -88,7 +92,8 @@
 }
 .cryptoImages{
     display: flex;
-    justify-content: center;
+    justify-content:center;
+    align-items: center;
     margin-top: 40px;
 }
 .sakura,.komorebi,.yugen{
@@ -96,13 +101,14 @@
     background-repeat: no-repeat;
     background-size: 80%;
     height: 132px;
-    width: 480px;
+    max-width: 400px;
+    width: 100%;
     color: #fff;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 5px;
     line-height: 30px;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1024px) {
     .statistic {
         gap: 30px;
     }
@@ -130,7 +136,7 @@
         justify-content: center;
     }
     .mainContainer{
-        height: 1400px;
+        height: 1800px;
         background-image: url("../../Assets/Images/cubes2.png");
         background-repeat: no-repeat;
         background-position: right top;
@@ -139,7 +145,7 @@
     }
  
     .discoverContainer {
-        height: 700px;
+        height: 800px;
         background-image: none;
         margin-top: 70px;
     }
@@ -149,7 +155,6 @@
     }
     .noutText {
         display: flex;
-        flex-direction: column;
         flex-wrap: wrap; 
         align-items: center; 
         max-width: 100%;
@@ -163,12 +168,12 @@
     }
     
     .noutbook img {
-        width:80px;
+        max-width: 70%;
         height: auto;
         display: block;
     }
     .discovery{
-       height: 70%;
+       height: 80%;
        margin-top: 50px;
        display: flex;
        flex-direction: column;
@@ -195,7 +200,7 @@
         flex-direction: column;
     }
     .productContainer img{
-         max-width: 50%;
+         max-width: 60%;
         height: auto;
         display: block;
     };
@@ -203,6 +208,7 @@
         display: flex;
         align-items: center; 
         justify-content: center; 
+        height: 500px;
     }  
     .ourProduct{
         display: flex;
@@ -213,6 +219,7 @@
         border: 2px solid #594271;
         border-radius: 50px;
         color: #AC82FF;
+        margin-top: 70px;
     }
     .productContainer {
         display: flex;
@@ -224,13 +231,13 @@
     }
     .cryptoImages{
         display: flex;
-        justify-content: center;
-        margin-top: 40px;
+        flex-wrap: wrap;
+        margin-top:20px;
     }
     .sakura,.komorebi,.yugen{
         background-image: url("../../Assets/Images/productImage.png");
         background-repeat: no-repeat;
-        background-size: 80%;
+        background-size: 90%;
         height: 132px;
         width: 480px;
         color: #fff;
